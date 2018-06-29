@@ -63,7 +63,7 @@ public class StreamingServer {
             bufferSalida.close();
 
             System.out.println("Se termino de enviar");
-
+            cliente.close();
         } catch (IOException ex) {
             Logger.getLogger(StreamingServer.class.getName()).log(Level.SEVERE, null, ex);
         }
