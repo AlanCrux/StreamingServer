@@ -54,7 +54,7 @@ public class StreamingServer {
             bufferSalida = new BufferedOutputStream(cliente.getOutputStream());
             byteArray = new byte[8192];
             int in;
-
+            
             while ((in = bufferEntrada.read(byteArray)) != -1) {
                 System.out.println("Enviando");
                 bufferSalida.write(byteArray, 0, in);
