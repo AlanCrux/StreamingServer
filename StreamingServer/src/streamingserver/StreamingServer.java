@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class StreamingServer {
 
-    private static final int PUERTO = 1234;
+    private static final int PUERTO = 9092;
     private static ServerSocket servidor;
     private static Socket cliente;
     private static String path;

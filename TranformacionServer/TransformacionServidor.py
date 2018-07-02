@@ -6,8 +6,6 @@ from pydub import AudioSegment
 import os
 import threading
 
-
-
 class ClientThread(threading.Thread):
     def __init__(self,clientAddress,clientsocket):
         threading.Thread.__init__(self)
@@ -55,7 +53,7 @@ class ClientThread(threading.Thread):
           album = partesRuta[1]
           nombreCancion = partesRuta[2]
           directorioCancion = artista+"/"+album+"/"
-          ruta = "/home/esmeralda/TequilaMusic/Repositorio/"+directorioCancion
+          ruta = "/home/alan/TequilaMusic/Repositorio/"+directorioCancion
           print '------------- Ruta donde se guarda la cancion convertida -----------'
           print ruta
           os.makedirs(ruta)
@@ -97,7 +95,7 @@ class ClientThread(threading.Thread):
         s.close
 
 LOCALHOST = ''
-PORT = 1234
+PORT = 9091
 #instanciamos un objeto para trabajar con el socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)

@@ -5,7 +5,7 @@ import socket
 from pydub import AudioSegment
 
 HOST = 'localhost'
-PORT = 1234
+PORT = 9091
 ADDR = (HOST,PORT)
 #Creamos un objeto socket para el servidor. Podemos dejarlo sin parametros pero si 
 #quieren pueden pasarlos de la manera server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
